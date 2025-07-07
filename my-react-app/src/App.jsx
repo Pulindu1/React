@@ -1,11 +1,12 @@
 // src/App.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar"; // since Navbar.jsx is directly under src/
+import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 };
